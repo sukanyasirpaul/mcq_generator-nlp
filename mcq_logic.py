@@ -1,7 +1,12 @@
 import spacy
 import random
+import os
 
-nlp = spacy.load("en_core_web_sm")
+try:
+    nlp = spacy.load("en_core_web_sm")
+except:
+    os.system("python -m spacy download en_core_web_sm")
+    nlp = spacy.load("en_core_web_sm")
 
 def generate_mcqs(text, num_questions=3):
     doc = nlp(text)
@@ -28,5 +33,6 @@ def generate_mcqs(text, num_questions=3):
 
         if len(mcqs) == num_questions:
             break
+
 
     return mcqs
