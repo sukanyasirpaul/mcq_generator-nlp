@@ -10,9 +10,9 @@ This project demonstrates practical implementation of NLP techniques for educati
 
 ---
 
-## 🚀 Live Demo
 
-🔗 [Deployed App Link Here]
+  Local URL: http://localhost:8501/ 
+  Network URL: http://192.168.1.4:8501 
 
 ---
 
