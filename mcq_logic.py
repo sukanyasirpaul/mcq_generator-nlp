@@ -1,7 +1,7 @@
 import spacy
 import random
 
-    nlp = spacy.load("en_core_web_sm")
+nlp = spacy.load("en_core_web_sm")
 
 def generate_mcqs(text, num_questions=3):
     doc = nlp(text)
@@ -31,4 +31,5 @@ def generate_mcqs(text, num_questions=3):
 
 
     return mcqs
+
 
